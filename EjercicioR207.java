@@ -23,12 +23,10 @@ class EjercicioR207
                 cadenaADevolver += palabraMasLarga + ",";
                 coleccion.remove(posicionMasLarga);
             }
-        }
-        else{
-            cadenaADevolver = " ";
+            cadenaADevolver = cadenaADevolver.substring(0,cadenaADevolver.length()-1);
         }
 
-        return cadenaADevolver.substring(0,cadenaADevolver.length()-1);
+        return cadenaADevolver;
     }
 
     // A continuación puedes escribir otros métodos si lo necesitas...
